@@ -10,7 +10,7 @@ const Navbar = () => {
           <div>
             <img
               className="h-12 w-auto ml-5"
-              src="./src/assets/somping.png"
+              src="../assets/somping.png"
               alt="myimg"
             />
           </div>
