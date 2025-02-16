@@ -1,6 +1,7 @@
 import { BsCart4 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import somping from "../assets/somping.png"
 const Navbar = () => {
      const { cart } = useSelector((state) => state);
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <div>
             <img
               className="h-12 w-auto ml-5"
-              src="../assets/somping.png"
+              src={somping}
               alt="myimg"
             />
           </div>
