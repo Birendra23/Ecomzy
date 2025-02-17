@@ -2,6 +2,7 @@ import { BsCart4 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import somping from "../assets/somping.png"
+
 const Navbar = () => {
      const { cart } = useSelector((state) => state);
   return (

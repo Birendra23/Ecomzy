@@ -17,7 +17,7 @@ const Cart = () => {
         <div className="md:flex justify-center gap-2">
           <div>
             {cart.map((item, index) => {
-              return <CartItem key={item.id} item={item} itemIndex={index} />;
+              return <CartItem key={item._id} item={item} itemIndex={index} />;
             })}
           </div>
 

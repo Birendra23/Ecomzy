@@ -5,7 +5,7 @@ import {toast} from "react-hot-toast";
 const CartItem = ({ item, itemIndex }) => {
   const dispatch = useDispatch();
   const removeFromCart = () =>{
-      dispatch(remove(item.id));
+      dispatch(remove(item._id));
       toast.error("Item Remeoved");
   }
   return (

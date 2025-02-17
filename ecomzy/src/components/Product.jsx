@@ -9,7 +9,7 @@ const Product = ({post}) => {
         toast.success("Item added successfully")
     }
     const removeFromCart = () => {
-        dispatch(remove(post.id));
+        dispatch(remove(post._id));
         toast.error("Item removed successfully")
     }
     return (
@@ -32,7 +32,7 @@ const Product = ({post}) => {
             <p className="text-green-600 font-semibold">${post.price}</p>
           </div>
           <button>
-            {cart.some((p) => p.id == post.id) ? (
+            {cart.some((p) => p._id == post._id) ? (
               <button
                 className="text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[9px] p-1 px-3 uppercase
             hover:bg-gray-700 hover:text-white transition duration-300 ease-in"
